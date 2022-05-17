@@ -1,0 +1,81 @@
+nav {
+  backdrop-filter: blur(1.5rem);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 2rem;
+  min-height: 5rem;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "kalam", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+nav ul li a img {
+  width: 4rem;
+  padding-right: 25vw;
+}
+nav ul li #bleu {
+  background-color: #0CAADC;
+  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+}
+nav hr {
+  border-style: double;
+  border-color: #11B5E4;
+  border-width: 1px;
+}
+
+section {
+  backdrop-filter: blur(1.5rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 50vh;
+  margin-left: 15%;
+  margin-top: 10%;
+  border-radius: 6px;
+}
+section div h1 {
+  margin-top: 5rem;
+  font-family: "kalam", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 5rem;
+}
+section div p {
+  margin-top: 2rem;
+  font-family: "kalam", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  width: 13rem;
+  text-align: end;
+}
+section div h2 {
+  margin-top: 2rem;
+  font-family: "kalam", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  font-size: 2.5rem;
+}
+section div img {
+  width: 15rem;
+}
+section div a {
+  color: black;
+}
+
+body {
+  width: 100%;
+  opacity: 1;
+  background-image: url("../img/back2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
