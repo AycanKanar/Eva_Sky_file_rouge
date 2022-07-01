@@ -1,0 +1,31 @@
+@use 'Couleur.scss';
+
+#cones{
+
+    div{
+
+        backdrop-filter: blur(1.5rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        height: 60vh;
+        margin-left: 15%;
+        margin-top: 10%;
+        border-radius: 6px;
+
+        h1{
+            font-size: 5vw;
+            margin-top: 2rem;
+        }
+        h2{
+            font-size: 4vw;
+            margin-top: 2rem;
+        }
+
+        img{
+            width: 4rem;
+            margin-top: 1rem;
+        }
+    }
+}

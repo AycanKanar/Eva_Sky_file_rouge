@@ -1,0 +1,1189 @@
+@use 'Couleur.scss';
+
+@media(min-width: 900px) {
+
+    body {
+        width: 100%;
+        opacity: 1;
+        background-image: url("../img/back2.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    section {
+        backdrop-filter: blur(1.5rem);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 60vh;
+        margin-left: 15%;
+        margin-top: 5%;
+        border-radius: 6px;
+
+        div h1 {
+            margin-top: 15%;
+            font-family: "kalam", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            color: var(--blanc);
+            font-size: 10vh;
+        }
+
+        div p {
+            margin-top: 2rem;
+            font-family: "kalam", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            color: var(--blanc);
+            font-size: 1.7rem;
+            width: 15rem;
+            text-align: end;
+        }
+
+        div h2 {
+            margin-top: 2rem;
+            font-family: "kalam", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            color: var(--blanc);
+            font-size: 5vh;
+        }
+
+        div img {
+            margin-top: 10%;
+            width: 30vh;
+            filter: drop-shadow(1px 10px 5px var(--Couleur1));
+        }
+
+        div a {
+            color: var(--Couleur1);
+        }
+    }
+
+
+
+    #discordbtn {
+        margin-left: 6rem;
+        margin-top: 1.5rem;
+        background-color: var(--Couleur5);
+        border-radius: 12px;
+        border: none;
+        text-decoration: none;
+        text-decoration: none;
+        font-family: "kalam", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.6rem;
+        padding: 0.2rem 1.2rem;
+        font-weight: bold;
+        transition: all 0.5s;
+    }
+
+    #discordbtn:hover {
+        background-color: var(--Couleur1);
+        color: var(--blanc);
+    }
+
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // //////////////////ACTUS//////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+
+    .secactus {
+        width: 70%;
+        background-color: var(--Couleur1);
+        backdrop-filter: unset;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5rem;
+
+        h3 {
+            margin-top: 2rem !important;
+            color: var(--blanc);
+            font-size: 2.5rem;
+            text-align: center;
+            margin: 0;
+        }
+
+        .divactustout {
+            background-color: var(--Couleur3);
+            width: 70%;
+            height: 50vh;
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .imgactus1:hover{
+                transform: scale(1.02);
+            }
+
+            .imgactus1 {
+                width: 99%;
+                height: 49vh;
+                margin-left: 0;
+                margin-top: 0;
+                background-image: url(/fil-rouge-eva-sky-V2/assets/img/skyblock-back.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                transition: all 0.2s ease-in-out;
+
+
+                div {
+                    background-color: rgba(212, 212, 212, 0.500);
+                    width: 100%;
+                    height: 5rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    h6 {
+                        font-weight: 800;
+                        margin-top: 2vh;
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+
+                    a {
+                        align-self: flex-end;
+                        margin-right: 2rem;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        transition: all;
+                        margin-top: 1rem;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        color: var(--Couleur3);
+                    }
+
+                    span:hover {
+                        color: var(--blanc);
+                    }
+                }
+            }
+
+            .imgactus2:hover{
+                transform: scale(1.02);
+            }
+            .imgactus2 {
+                width: 99%;
+                height: 49vh;
+                margin-left: 0;
+                margin-top: 0;
+                background-image: url(/fil-rouge-eva-sky-V2/assets/img/arme_ggo.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                transition: all 0.2s ease-in-out;
+
+                div {
+                    background-color: rgba(212, 212, 212, 0.500);
+                    width: 100%;
+                    height: 5rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    h6 {
+                        font-weight: 800;
+                        margin-top: 2vh;
+                        font-size: 1.5rem;
+                        text-align: center;
+                    }
+
+                    a {
+                        align-self: flex-end;
+                        margin-right: 2rem;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        transition: all;
+                        margin-top: 1rem;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        color: var(--Couleur3);
+                    }
+
+                    span:hover {
+                        color: var(--blanc);
+                    }
+                }
+
+            }
+        }
+    }
+
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // //////////////////vote top 3/////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+
+    .votett{
+        width: 70%;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        backdrop-filter: unset;
+    }
+
+    .classement {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+    .pclassement1 {
+        color: var(--blanc);
+        font-size: 3rem;
+        font-weight: 700;
+        padding-bottom: 3rem;
+        padding-top: 5rem;
+        text-shadow: #000 0.1rem 0.1rem 0.1rem;
+    }
+
+    .pclassement2 {
+        color: var(--blanc);
+        font-size: 1.5rem;
+        text-align: center;
+        text-shadow: #000 0.1rem 0.1rem 0.1rem;
+        width: 55rem;
+    }
+
+    #back1 {
+        box-shadow: var(--Couleur3) 0.1rem 0.2rem 0.6rem;
+        height: 0.1rem;
+        width: 100%;
+    }
+
+    #casevote {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 5rem;
+    }
+
+    .vote {
+        backdrop-filter: blur(5.5rem);
+        align-items: center;
+        box-shadow: #000 0.5rem 0.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        transition: all 0.5s ease-out;
+        width: 15rem;
+        border-radius: 2rem 0rem 2rem 0rem;
+    }
+
+    .vote:hover {
+        box-shadow: #000 1rem 1.5rem 1rem;
+    }
+
+    .votediv {
+        align-items: center;
+        background-color: unset;
+        border-radius: 100%;
+        display: flex;
+        height: 10rem;
+        justify-content: center;
+        margin-top: 2rem;
+        overflow: hidden;
+        width: 10rem;
+    }
+
+    .votediv img {
+        width: 5rem;
+    }
+
+    .voteclass h2 {
+        color: var(--Couleur1);
+        font-size: 2rem;
+        font-weight: 700;
+        padding-top: 1rem;
+    }
+
+    .voteclass {
+        text-align: center;
+    }
+
+    .voteclass p {
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding-top: 0.5rem;
+        color: var(--Couleur1);
+        text-align: center;
+    }
+
+    #vote1,
+    #vote3 {
+        margin-top: 5rem;
+    }
+
+
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // //////////////////CARTE//////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+
+    @media(min-width: 1400px) {
+        .flex {
+            width: 70%;
+            background-color: var(--Couleur1);
+            backdrop-filter: unset;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+
+            #carte-tout {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                margin: 2rem;
+                width: 100%;
+                flex-wrap: wrap;
+                align-content: center;
+
+
+                .carte-container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 1000px;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                }
+
+                .carte-container .carte .face {
+                    height: 255px;
+                    transition: 0.5s;
+                    width: 300px;
+                }
+
+                .carte-container .carte .face.face1 {
+                    align-items: center;
+                    background: #FFFFFF;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    transform: translateY(150px);
+                    z-index: 1;
+                }
+
+                .carte-container .carte:hover .face.face1 {
+                    background: #0080FF;
+                    transform: translateY(0);
+                }
+
+                .carte-container .carte .face.face1 .interieur-carte {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    opacity: 0.6;
+                    transition: 0.5s;
+                }
+
+                .carte-container .carte:hover .face.face1 .interieur-carte {
+                    opacity: 1;
+                }
+
+                .carte-container .carte .face.face1 .interieur-carte img {
+                    max-width: 100px;
+                }
+
+                .carte-container .carte .face.face1 .interieur-carte h3 {
+                    color: #000;
+                    font-size: 1.5em;
+                    margin: 10px 0 0;
+                    padding: 0;
+                    text-align: center;
+                }
+
+                .carte-container .carte .face.face2 {
+                    align-items: center;
+                    background: #fff;
+                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+                    position: relative;
+                    transform: translateY(-100px);
+                }
+
+                .carte-container .carte:hover .face.face2 {
+                    transform: translateY(0);
+                }
+
+                .carte-container .carte .face.face2 .interieur-carte p {
+                    font-size: 1.2rem;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+
+                .carte-container .carte .face.face2 .interieur-carte a {
+                    border: 1px solid #333;
+                    color: #333;
+                    display: inline-block;
+                    font-weight: 900;
+                    margin: 15px 0 0;
+                    padding: 5px;
+                    text-decoration: none;
+                }
+
+                .carte-container .carte .face.face2 .interieur-carte a:hover {
+                    background: #333;
+                    color: #fff;
+                }
+
+                p {
+                    color: var(--Couleur1);
+                }
+            }
+        }
+
+    }
+
+
+    @media(max-width: 1400px) {
+        .flex {
+            width: 70%;
+            background-color: var(--Couleur1);
+            backdrop-filter: unset;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+
+            #carte-tout {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                margin: 2rem;
+                width: 100%;
+                flex-wrap: wrap;
+                align-content: center;
+
+
+                .carte-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 1000px;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                }
+
+                .carte-container .carte .face {
+                    height: 255px;
+                    transition: 0.5s;
+                    width: 300px;
+                }
+
+                .carte-container .carte .face.face1 {
+                    align-items: center;
+                    background: #FFFFFF;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    transform: translateY(150px);
+                    z-index: 1;
+                }
+
+                .carte-container .carte:hover .face.face1 {
+                    background: #0080FF;
+                    transform: translateY(0);
+                }
+
+                .carte-container .carte .face.face1 .interieur-carte {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    opacity: 0.6;
+                    transition: 0.5s;
+                }
+
+                .carte-container .carte:hover .face.face1 .interieur-carte {
+                    opacity: 1;
+                }
+
+                .carte-container .carte .face.face1 .interieur-carte img {
+                    max-width: 100px;
+                }
+
+                .carte-container .carte .face.face1 .interieur-carte h3 {
+                    color: #000;
+                    font-size: 1.5em;
+                    margin: 10px 0 0;
+                    padding: 0;
+                    text-align: center;
+                }
+
+                .carte-container .carte .face.face2 {
+                    align-items: center;
+                    background: #fff;
+                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+                    position: relative;
+                    transform: translateY(-100px);
+                }
+
+                .carte-container .carte:hover .face.face2 {
+                    transform: translateY(0);
+                }
+
+                .carte-container .carte .face.face2 .interieur-carte p {
+                    font-size: 1.2rem;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+
+                .carte-container .carte .face.face2 .interieur-carte a {
+                    border: 1px solid #333;
+                    color: #333;
+                    display: inline-block;
+                    font-weight: 900;
+                    margin: 15px 0 0;
+                    padding: 5px;
+                    text-decoration: none;
+                }
+
+                .carte-container .carte .face.face2 .interieur-carte a:hover {
+                    background: #333;
+                    color: #fff;
+                }
+
+                p {
+                    color: var(--Couleur1);
+                }
+            }
+        }
+    }
+
+
+}
+
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+
+@media(max-width: 900px) {
+
+    body {
+        width: 100%;
+        opacity: 1;
+        background-image: url("../img/back2.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+
+    section {
+        backdrop-filter: blur(1.5rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 90vh;
+        border-radius: 6px;
+
+        div h1 {
+            margin-top: 2rem;
+            font-family: "kalam", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            color: var(--blanc);
+            font-size: 10vh;
+        }
+
+        div p {
+            margin-top: 2rem;
+            font-family: "kalam", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            color: var(--blanc);
+            font-size: 1.7rem;
+            width: 15rem;
+            text-align: end;
+        }
+
+        div h2 {
+            margin-top: 2rem;
+            font-family: "kalam", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            color: var(--blanc);
+            font-size: 5vh;
+        }
+
+        div img {
+            margin-top: 10%;
+            width: 30vh;
+            filter: drop-shadow(1px 10px 5px var(--Couleur1));
+        }
+
+        div a {
+            color: var(--Couleur1);
+        }
+    }
+
+
+
+    #discordbtn {
+        margin-left: 6rem;
+        margin-top: 1.5rem;
+        background-color: var(--Couleur5);
+        border-radius: 12px;
+        border: none;
+        text-decoration: none;
+        text-decoration: none;
+        font-family: "kalam", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 1.6rem;
+        padding: 0.2rem 1.2rem;
+        font-weight: bold;
+        transition: all 0.5s;
+    }
+
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // //////////////////ACTUS//////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+
+    .secactus {
+        margin-top: 2rem;
+        width: 100%;
+        background-color: var(--Couleur1);
+        backdrop-filter: unset;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5rem;
+
+        h3 {
+            margin-top: 2rem !important;
+            color: var(--blanc);
+            font-size: 2rem;
+            text-align: center;
+            margin: 0;
+        }
+
+        .divactustout {
+            background-color: var(--Couleur3);
+            width: 70%;
+            height: 50vh;
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .imgactus1 {
+                width: 99%;
+                height: 49vh;
+                margin-left: 0;
+                margin-top: 0;
+                background-image: url(/fil-rouge-eva-sky-V2/assets/img/skyblock-back.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                transition: all 0.2s ease-in-out;
+
+
+                div {
+                    background-color: rgba(212, 212, 212, 0.500);
+                    width: 100%;
+                    height: 5rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    h6 {
+                        font-weight: 800;
+                        margin-top: 2vh;
+                        font-size: 1.1rem;
+                        text-align: center;
+                    }
+
+                    a {
+                        align-self: flex-end;
+                        margin-right: 2rem;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        transition: all;
+                        margin-top: 1rem;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .imgactus2:hover{
+                transform: scale(1.02);
+            }
+            .imgactus2 {
+                width: 99%;
+                height: 49vh;
+                margin-left: 0;
+                margin-top: 0;
+                background-image: url(/fil-rouge-eva-sky-V2/assets/img/arme_ggo.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                transition: all 0.2s ease-in-out;
+
+                div {
+                    background-color: rgba(212, 212, 212, 0.500);
+                    width: 100%;
+                    height: 5rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    h6 {
+                        font-weight: 800;
+                        margin-top: 2vh;
+                        font-size: 1.1rem;
+                        text-align: center;
+                    }
+
+                    a {
+                        align-self: flex-end;
+                        margin-right: 2rem;
+                        font-size: 1rem;
+                        font-weight: 700;
+                        transition: all;
+                        margin-top: 1rem;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        color: var(--Couleur3);
+                    }
+
+                    span:hover {
+                        color: var(--blanc);
+                    }
+                }
+
+            }
+        }
+    }
+
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // //////////////////vote top 3/////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+
+    .votett{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        backdrop-filter: unset;
+    }
+
+    .classement {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+    .pclassement1 {
+        color: var(--blanc);
+        font-size: 3rem;
+        font-weight: 700;
+        padding-bottom: 3rem;
+        padding-top: 5rem;
+        text-shadow: #000 0.1rem 0.1rem 0.1rem;
+    }
+
+    .pclassement2 {
+        color: var(--blanc);
+        font-size: 1.5rem;
+        text-align: center;
+        text-shadow: #000 0.1rem 0.1rem 0.1rem;
+        width: 55rem;
+    }
+
+    #back1 {
+        box-shadow: var(--Couleur3) 0.1rem 0.2rem 0.6rem;
+        height: 0.1rem;
+        width: 100%;
+    }
+
+    #casevote {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-bottom: 5rem;
+    }
+
+    .vote {
+        backdrop-filter: blur(5.5rem);
+        align-items: center;
+        box-shadow: #000 0.5rem 0.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        transition: all 0.5s ease-out;
+        width: 15rem;
+        border-radius: 2rem 0rem 2rem 0rem;
+    }
+
+    .vote:hover {
+        box-shadow: #000 1rem 1.5rem 1rem;
+    }
+
+    .votediv {
+        align-items: center;
+        background-color: unset;
+        border-radius: 100%;
+        display: flex;
+        height: 10rem;
+        justify-content: center;
+        margin-top: 2rem;
+        overflow: hidden;
+        width: 10rem;
+    }
+
+    .votediv img {
+        width: 5rem;
+    }
+
+    .voteclass h2 {
+        color: var(--Couleur1);
+        font-size: 2rem;
+        font-weight: 700;
+        padding-top: 1rem;
+    }
+
+    .voteclass {
+        text-align: center;
+    }
+
+    .voteclass p {
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding-top: 0.5rem;
+        color: var(--Couleur1);
+        text-align: center;
+    }
+
+    #vote1,
+    #vote3 {
+        margin-top: 5rem;
+    }
+
+
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+    // //////////////////CARTE//////////////////
+    // /////////////////////////////////////////
+    // /////////////////////////////////////////
+
+    @media(min-width: 1400px) {
+        .flex {
+            width: 70%;
+            background-color: var(--Couleur1);
+            backdrop-filter: unset;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+
+            #carte-tout {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                margin: 2rem;
+                width: 100%;
+                flex-wrap: wrap;
+                align-content: center;
+
+
+                .carte-container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 1000px;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                }
+
+                .carte-container .carte .face {
+                    height: 255px;
+                    transition: 0.5s;
+                    width: 300px;
+                }
+
+                .carte-container .carte .face.face1 {
+                    align-items: center;
+                    background: #FFFFFF;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    transform: translateY(150px);
+                    z-index: 1;
+                }
+
+                .carte-container .carte:hover .face.face1 {
+                    background: #0080FF;
+                    transform: translateY(0);
+                }
+
+                .carte-container .carte .face.face1 .interieur-carte {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    opacity: 0.6;
+                    transition: 0.5s;
+                }
+
+                .carte-container .carte:hover .face.face1 .interieur-carte {
+                    opacity: 1;
+                }
+
+                .carte-container .carte .face.face1 .interieur-carte img {
+                    max-width: 100px;
+                }
+
+                .carte-container .carte .face.face1 .interieur-carte h3 {
+                    color: #000;
+                    font-size: 1.5em;
+                    margin: 10px 0 0;
+                    padding: 0;
+                    text-align: center;
+                }
+
+                .carte-container .carte .face.face2 {
+                    align-items: center;
+                    background: #fff;
+                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+                    position: relative;
+                    transform: translateY(-100px);
+                }
+
+                .carte-container .carte:hover .face.face2 {
+                    transform: translateY(0);
+                }
+
+                .carte-container .carte .face.face2 .interieur-carte p {
+                    font-size: 1.2rem;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+
+                .carte-container .carte .face.face2 .interieur-carte a {
+                    border: 1px solid #333;
+                    color: #333;
+                    display: inline-block;
+                    font-weight: 900;
+                    margin: 15px 0 0;
+                    padding: 5px;
+                    text-decoration: none;
+                }
+
+                .carte-container .carte .face.face2 .interieur-carte a:hover {
+                    background: #333;
+                    color: #fff;
+                }
+
+                p {
+                    color: var(--Couleur1);
+                }
+            }
+        }
+
+    }
+
+    @media(max-width: 1400px) {
+        .flex {
+            width: 70%;
+            background-color: var(--Couleur1);
+            backdrop-filter: unset;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+
+            #carte-tout {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                margin: 2rem;
+                width: 100%;
+                flex-wrap: wrap;
+                align-content: center;
+
+
+                .carte-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 1000px;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                }
+
+                .carte-container .carte .face {
+                    height: 255px;
+                    transition: 0.5s;
+                    width: 300px;
+                }
+
+                .carte-container .carte .face.face1 {
+                    align-items: center;
+                    background: #FFFFFF;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    transform: translateY(150px);
+                    z-index: 1;
+                }
+
+                .carte-container .carte:hover .face.face1 {
+                    background: #0080FF;
+                    transform: translateY(0);
+                }
+
+                .carte-container .carte .face.face1 .interieur-carte {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    opacity: 0.6;
+                    transition: 0.5s;
+                }
+
+                .carte-container .carte:hover .face.face1 .interieur-carte {
+                    opacity: 1;
+                }
+
+                .carte-container .carte .face.face1 .interieur-carte img {
+                    max-width: 100px;
+                }
+
+                .carte-container .carte .face.face1 .interieur-carte h3 {
+                    color: #000;
+                    font-size: 1.5em;
+                    margin: 10px 0 0;
+                    padding: 0;
+                    text-align: center;
+                }
+
+                .carte-container .carte .face.face2 {
+                    align-items: center;
+                    background: #fff;
+                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+                    position: relative;
+                    transform: translateY(-100px);
+                }
+
+                .carte-container .carte:hover .face.face2 {
+                    transform: translateY(0);
+                }
+
+                .carte-container .carte .face.face2 .interieur-carte p {
+                    font-size: 1.2rem;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+
+                .carte-container .carte .face.face2 .interieur-carte a {
+                    border: 1px solid #333;
+                    color: #333;
+                    display: inline-block;
+                    font-weight: 900;
+                    margin: 15px 0 0;
+                    padding: 5px;
+                    text-decoration: none;
+                }
+
+                .carte-container .carte .face.face2 .interieur-carte a:hover {
+                    background: #333;
+                    color: #fff;
+                }
+
+                p {
+                    color: var(--Couleur1);
+                }
+            }
+        }
+    }
+
+
+}
